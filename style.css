@@ -1,0 +1,106 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #e8f0fe; /* Light blue background */
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Container styling */
+div {
+    width: 50%;
+    min-height: 100vh;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 30px; /* Increased padding */
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    div {
+        width: 100%;
+        padding: 20px; /* Adjusted padding for smaller screens */
+    }
+}
+
+/* Header styling */
+h1 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px; /* Increased margin for better spacing */
+    color: #3b5998; /* Dark blue for h1 */
+}
+
+h2 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 2rem;
+    margin-bottom: 25px; /* Space between h2 and following text */
+    color: #0056b3; /* Medium blue for h2 */
+}
+
+h3 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.75rem;
+    margin-bottom: 20px; /* Space between h3 and following text */
+    color: #007BFF; /* Lighter blue for h3 */
+}
+
+/* Paragraph and text block styling */
+p, ul, ol {
+    margin-bottom: 20px; /* Space between text blocks */
+}
+
+/* Image styling */
+img {
+    height: 266px;
+    width: auto;
+    max-width: 100%;
+    padding-bottom: 20px;
+    border-radius: 5%;
+    object-fit: cover; /* Ensures image covers the fixed height without distortion */
+}
+/* Link styling */
+a {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 1.125rem; /* Slightly larger text */
+    color: #007BFF; /* Bright blue color */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3; /* Darker blue on hover */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Subtle glow effect */
+    transform: scale(1.05); /* Slightly enlarges the link */
+}
+
+a:active {
+    color: #003366; /* Even darker blue on click */
+    transform: scale(0.95); /* Shrinks slightly when clicked */
+    text-shadow: none; /* Removes shadow when clicked */
+}
+
+/* Focus state for accessibility */
+a:focus {
+    outline: 2px dashed #007BFF; /* Dashed outline for keyboard focus */
+    outline-offset: 4px;
+}
+
